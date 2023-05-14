@@ -90,12 +90,13 @@ export default function HeroImageRight() {
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow' }}
               >
-                Unlimited movies, TV shows and more
+                Our Story
               </Text>{' '}
             </Title>
 
             <Text className={classes.description} mt={30} className="font-bold text-2xl">
-              Watch anywhere. Cancel anytime.
+              Stories move us.They make us feel more emotion, see new perspectives,
+              and bring us closer to each other.
             </Text>
 
             <Link href="/movie">
