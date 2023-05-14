@@ -7,6 +7,8 @@ import Hero from "../app/(components)/Hero.js"
 
 export default function Home() {
   return (
-      <div><Hero/></div>
+    <div>
+      <Hero/>
+    </div>
   )
 }
