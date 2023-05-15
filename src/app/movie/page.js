@@ -1,4 +1,4 @@
-import MovieCard from "../(components)/MovieCard.js"
+import MovieCard from "../components/MovieCard.js"
 
 export default async function Movie(){
 
