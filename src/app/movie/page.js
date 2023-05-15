@@ -15,14 +15,16 @@ const options = {
 	const result = await response.json();
   const mainData = result.titles;
   return(
-    <div>
-      <h1>Series and movies</h1>
-      {
-        mainData.map((item) => {
-          return <MovieCard key={item.id} {...item}/>
-        })
+    <div className="flex items-center justify-center flex-col gap-10">
+      <h1 className="uppercase text-3xl font-bold">Series and movies</h1>
+      <div className="grid grid-cols-5 gap-2">
+        {
+          mainData.map((item) => {
+            return <MovieCard key={item.id} {...item}/>
+          })
 
-      }
+        }
+      </div>
     </div>)
 }
 
