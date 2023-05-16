@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MovieCard(item){
 
@@ -15,7 +16,10 @@ export default function MovieCard(item){
 
       <h1 className="uppercase text-md">{synopsis}</h1>
 
-      <button className="bg-gradient-to-r from-amber-500 to-pink-500 px-5 py-2 rounded-md">Read More</button>
+      <Link href={`/movie/${id}`}> 
+        <button className="bg-gradient-to-r from-amber-500 to-pink-500 px-5 py-2 rounded-md">Read More</button>
+      </Link>
+
 
 
 
